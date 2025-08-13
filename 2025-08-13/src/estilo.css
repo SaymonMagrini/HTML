@@ -1,0 +1,53 @@
+body {
+    width: fit-content;
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #eeeeee;
+
+    .hidden {
+        display: none;
+    }
+
+    .tables{
+        border: #9500ff;
+        border-style:double; 
+        border-collapse: collapse;
+        width: 50%;
+        background-color: #1a1a1a;
+    }
+
+    /*text color classes*/
+    
+    .redt {
+        color: #ff0000;
+    }
+
+    .purplet {
+        color: #9500ff;
+    }
+
+    .greent {
+        color: #00ff00;
+    }
+
+    .yellowt {
+        color:#ffff00
+    }
+    /* background color classes */
+
+    .redb {
+        background-color: #ff0000;
+        width: fit-content;
+    }
+
+    .purpleb {
+        background-color: #9500ff;
+        width: fit-content;
+    }
+
+    .greenb {
+        background-color: #00ff00;
+        width: fit-content;
+    }
+
+}
