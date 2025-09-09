@@ -2,20 +2,13 @@ body {
 
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #111111;
+    background-color: #000000;
     color: #eeeeee;
 
 }
 
 .hidden {
     display: none;
-}
-
-.geral {
-    width: 100%;
-    height: 100%;
-    padding: 0.5%;
-    background-color: #000000;
 }
 
 .logo-marca {
@@ -109,6 +102,61 @@ body {
     right: 20px;
     color: rgba(255, 255, 255, 0.3);
     animation: misterio 2s infinite ease-in-out;
+    text-decoration: none;
+}
+
+/*animação misteriosa*/
+@keyframes misterio {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+#tooltip {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: #212121;
+    color: #00ee69;
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    font-family: sans-serif;
+}
+
+#tooltip.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container { /*container será abreviado para ctnr*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: #111111;
+}
+
+.ctnr-itm{
+    width: 60px;
+    height: 60px;
+    background-color: #430099;
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
 
 .tables {
@@ -166,20 +214,4 @@ body {
 .greenb {
     background-color: #00ff00;
     width: fit-content;
-}
-
-
-
-
-/*animação da interrogação*/
-@keyframes misterio {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-3px);
-    }
 }

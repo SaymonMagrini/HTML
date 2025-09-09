@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pág 4</title>
+    <title>Esqueleto flex-box</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="src/estilo.css">
 </head>
 
-<body class="geral">
+<body>
     <header>
-
         <div class="cabeçalho">
             <a href="index.html">
                 <img src="media/logo.png" alt="Era pra ser a logo" class="logo-marca">
@@ -23,12 +23,24 @@
         </div>
     </header>
 
+    <main>
+        <div id="app" class="container">
+            <div id="itmUm" class="ctnr-itm"> item 1 </div>
+            <div id="itmDois" class="ctnr-itm"> item 2 </div>
+            <div id="itmTres" class="ctnr-itm"> item 3 </div>
+            <div id="itmQuatro" class="ctnr-itm"> item 4</div>
+        </div>
+    </main>
 
     <div>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
             <img src="media/interrogação.png" alt="Mistério" class="interrogação">
         </a>
     </div>
+
+    <div id="tooltip">Você acaba de carregar uma página esqueleto</div>
+    <script src="src/tooltip.js"></script>
+
 </body>
 
 </html>
